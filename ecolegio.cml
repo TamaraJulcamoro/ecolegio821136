@@ -1,0 +1,51 @@
+ContextMap IE821136ecolegioMap {
+    contains GestionPagosContext
+    contains GestionMatriculasContext
+    contains GestionEstudiantesContext
+    contains GestionAsistenciaContext
+    contains GestionRecursosAcademicosContext
+    contains GestionNotaseInformesContext
+    contains GestionAsignaturasContext
+    
+   
+    GestionMatriculasContext [D,CF]<-[U,OHS,PL] GestionPagosContext{
+
+    }
+
+    GestionMatriculasContext [P]<->[P] GestionEstudiantesContext
+    GestionEstudiantesContext [P]<->[P] GestionAsistenciaContext
+    GestionMatriculasContext [P]<->[P] GestionAsistenciaContext
+    GestionMatriculasContext [P]<->[P] GestionNotaseInformesContext
+    GestionAsignaturasContext [P]<->[P] GestionRecursosAcademicosContext
+    GestionAsignaturasContext [P]<->[P] GestionNotaseInformesContext
+
+}
+
+    BoundedContext GestionPagosContext{
+
+    }
+
+    BoundedContext GestionMatriculasContext{
+
+    }
+
+    BoundedContext GestionEstudiantesContext{
+
+    }
+
+    BoundedContext GestionAsistenciaContext{
+
+    }
+
+    BoundedContext GestionRecursosAcademicosContext{
+
+    }
+
+    BoundedContext GestionNotaseInformesContext{
+
+    }
+
+    BoundedContext GestionAsignaturasContext{
+
+    }
+

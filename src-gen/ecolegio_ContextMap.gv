@@ -1,0 +1,21 @@
+digraph "ContextMapGraph" {
+graph ["imagepath"="/tmp/GraphvizJava"]
+"GestionAsignaturasContext" ["margin"="0.3","orientation"="207","shape"="egg","fontsize"="16","style"="bold","label"="GestionAsignaturasContext\n","fontname"="sans-serif"]
+"GestionNotaseInformesContext" ["margin"="0.3","orientation"="193","shape"="egg","fontsize"="16","style"="bold","label"="GestionNotaseInformesContext\n","fontname"="sans-serif"]
+"GestionRecursosAcademicosContext" ["margin"="0.3","orientation"="310","shape"="egg","fontsize"="16","style"="bold","label"="GestionRecursosAcademicosContext\n","fontname"="sans-serif"]
+"GestionAsistenciaContext" ["margin"="0.3","orientation"="122","shape"="egg","fontsize"="16","style"="bold","label"="GestionAsistenciaContext\n","fontname"="sans-serif"]
+"GestionEstudiantesContext" ["margin"="0.3","orientation"="231","shape"="egg","fontsize"="16","style"="bold","label"="GestionEstudiantesContext\n","fontname"="sans-serif"]
+"GestionMatriculasContext" ["margin"="0.3","orientation"="242","shape"="egg","fontsize"="16","style"="bold","label"="GestionMatriculasContext\n","fontname"="sans-serif"]
+"GestionPagosContext" ["margin"="0.3","orientation"="216","shape"="egg","fontsize"="16","style"="bold","label"="GestionPagosContext\n","fontname"="sans-serif"]
+"GestionAsignaturasContext" -> "GestionNotaseInformesContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"GestionAsignaturasContext" -> "GestionRecursosAcademicosContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"GestionEstudiantesContext" -> "GestionAsistenciaContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"GestionMatriculasContext" -> "GestionAsistenciaContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"GestionMatriculasContext" -> "GestionEstudiantesContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"GestionMatriculasContext" -> "GestionNotaseInformesContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"GestionPagosContext" -> "GestionMatriculasContext" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>CF</font></td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">U</td><td sides="trbl" bgcolor="white"><font>OHS, PL</font></td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+}
